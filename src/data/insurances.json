@@ -1,0 +1,8 @@
+{
+  "oc_auto":   { "name": "OC auta", "owner": "me", "cost": 90, "desc": "Obowiązkowe. Płaci za szkody, które wyrządzisz innym.", "icon": "✅" },
+  "ac":        { "name": "AC auta", "owner": "me", "cost": 170, "desc": "Płaci za naprawę Twojego auta po stłuczce.", "icon": "🚗" },
+  "home":      { "name": "Mieszkanie + OC w życiu prywatnym", "owner": "me", "cost": 45, "desc": "Zalanie, pożar, kradzież i szkody wyrządzone sąsiadom.", "icon": "🏠" },
+  "life":      { "name": "NNW / na życie", "owner": "me", "cost": 110, "desc": "Pieniądze, gdy wypadek lub choroba wyłączy Cię z pracy.", "icon": "❤️" },
+  "firm_oc":   { "name": "OC działalności", "owner": "firm", "cost": 90, "desc": "Roszczenia klientów za szkody wyrządzone przez firmę.", "icon": "⚖️" },
+  "firm_prop": { "name": "Mienie firmy", "owner": "firm", "cost": 140, "desc": "Sprzęt, towar i lokal: awaria, zalanie, kradzież.", "icon": "🧰" }
+}

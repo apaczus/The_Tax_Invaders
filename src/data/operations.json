@@ -1,0 +1,16 @@
+[
+  { "id": "pay",         "unlockLevel": 1, "icon": "💳", "name": "Spłać dług / zaległość", "sub": "Z konta firmy lub prywatnego" },
+  { "id": "transfer",    "unlockLevel": 1, "icon": "🔁", "name": "Przelew firma ↔ Ty", "sub": "Wypłata lub dopłata" },
+  { "id": "budget",      "unlockLevel": 1, "icon": "🧾", "name": "Budżet domowy", "sub": "Ile wydajesz na życie" },
+  { "id": "sell",        "unlockLevel": 1, "icon": "📦", "name": "Sprzedaj zbędne rzeczy", "sub": "Jednorazowo +1 200 zł" },
+  { "id": "consolidate", "unlockLevel": 1, "icon": "🏦", "name": "Kredyt konsolidacyjny", "sub": "Zamień drogie długi na tańszy" },
+  { "id": "separate",    "unlockLevel": 1, "icon": "🗂️", "name": "Rozdziel konta", "sub": "Firmowe ≠ prywatne" },
+  { "id": "savings",     "unlockLevel": 2, "icon": "🐷", "name": "Poduszka finansowa", "sub": "Konto oszczędnościowe" },
+  { "id": "reserve",     "unlockLevel": 2, "icon": "🧱", "name": "Rezerwa firmy", "sub": "Pieniądze na gorszy miesiąc" },
+  { "id": "salary",      "unlockLevel": 2, "icon": "💼", "name": "Twoja pensja z firmy", "sub": "Od następnego miesiąca" },
+  { "id": "hire",        "unlockLevel": 3, "icon": "👥", "name": "Zatrudnij pracownika", "sub": "Więcej klientów" },
+  { "id": "equip",       "unlockLevel": 3, "icon": "🛠️", "name": "Kup sprzęt", "sub": "Gotówka lub leasing" },
+  { "id": "marketing",   "unlockLevel": 3, "icon": "📣", "name": "Kampania marketingowa", "sub": "Jednorazowy wzrost" },
+  { "id": "insurance",   "unlockLevel": 4, "icon": "🛡️", "name": "Ubezpieczenia", "sub": "Przenieś ryzyko" },
+  { "id": "invest",      "unlockLevel": 5, "icon": "📈", "name": "Inwestycje", "sub": "Obligacje i ETF" }
+]

@@ -1,0 +1,9 @@
+{
+  "_comment": "rate = oprocentowanie MIESIĘCZNE. minPayment = rata; \"card\" = 5% salda (min. 50 zł). kind: expensive | normal | zero | mortgage",
+  "karta":     { "name": "Karta kredytowa",   "owner": "me",   "balance": 4000,  "rate": 0.016, "minPayment": "card", "kind": "expensive", "label": "Zadłużona karta kredytowa", "hint": "4 000 zł · ok. 19% rocznie", "icon": "💳" },
+  "chwilowka": { "name": "Chwilówka",         "owner": "me",   "balance": 1500,  "rate": 0.05,  "minPayment": 300,    "kind": "expensive", "label": "Chwilówka", "hint": "1 500 zł · bardzo droga", "icon": "⚡" },
+  "debet":     { "name": "Debet w koncie",    "owner": "me",   "balance": 1000,  "rate": 0.017, "minPayment": 100,    "kind": "expensive", "label": "Debet w koncie", "hint": "1 000 zł · ok. 20% rocznie", "icon": "➖" },
+  "gotowkowy": { "name": "Kredyt gotówkowy",  "owner": "me",   "balance": 14000, "rate": 0.01,  "minPayment": 650,    "kind": "normal",    "label": "Kredyt gotówkowy", "hint": "14 000 zł · 12% rocznie", "icon": "🏦" },
+  "raty0":     { "name": "Zakupy na raty 0%", "owner": "me",   "balance": 2400,  "rate": 0,     "minPayment": 200,    "kind": "zero",      "label": "Zakupy na raty 0%", "hint": "2 400 zł · 0%", "icon": "📱" },
+  "firmowy":   { "name": "Kredyt firmowy",    "owner": "firm", "balance": 25000, "rate": 0.008, "minPayment": 1100,   "kind": "normal",    "label": "Kredyt firmowy", "hint": "25 000 zł · ok. 10% rocznie", "icon": "🏢" }
+}
