@@ -4,6 +4,8 @@ module.exports = {
   presets: [require("nativewind/preset")],
   // web: klasy Tailwind muszą wygrywać z domyślnymi stylami react-native-web
   important: "html",
+  // NativeWind w trybie dev wywala się przy darkMode "media" (setColorScheme) – używamy "class"
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
