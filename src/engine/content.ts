@@ -23,6 +23,8 @@ export interface Industry {
   claim: string;
   order: string;
   marketing: string;
+  competitor: string;
+  viral: string;
   stageIcons: string[];
 }
 
