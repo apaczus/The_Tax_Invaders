@@ -1,0 +1,60 @@
+[
+  { "id": "you", "title": "Cześć! Zacznijmy od Ciebie",
+    "sub": "Finance Quest to symulacja: przez 5 miesięcy prowadzisz swoją firmę i swoje finanse. Najpierw kilka pytań – na ich podstawie ułożymy Twój punkt startowy.",
+    "questions": [
+      { "field": "name", "type": "text", "label": "Jak masz na imię?", "placeholder": "np. Ania", "required": true },
+      { "field": "firmName", "type": "text", "label": "Jak nazywa się Twoja firma?", "placeholder": "np. Bistro Pod Lipą" }
+    ] },
+  { "id": "industry", "title": "Z jakiej branży jest Twoja firma?",
+    "sub": "Każdy gracz dostaje te same liczby na start – branża zmienia Twoją firmę, pracowników, sprzęt i sytuacje, które Cię spotkają.",
+    "questions": [ { "field": "industry", "type": "single", "source": "industries", "required": true } ] },
+  { "id": "firm", "title": "Opowiedz trochę o firmie", "sub": "Ogólnie – to tylko kontekst.",
+    "questions": [
+      { "field": "firmAge", "type": "single", "label": "Jak długo działa firma?", "required": true, "options": [
+        { "value": "plan", "label": "Dopiero planuję", "icon": "🌱" },
+        { "value": "lt1", "label": "Krócej niż rok", "icon": "🐣" },
+        { "value": "y1_3", "label": "1–3 lata", "icon": "🌿" },
+        { "value": "y3", "label": "Ponad 3 lata", "icon": "🌳" } ] },
+      { "field": "firmDesc", "type": "text", "label": "Czym się zajmuje? (opcjonalnie)", "placeholder": "np. Kuchnia domowa, lunche dla biur", "multiline": true }
+    ] },
+  { "id": "home", "title": "Dom i samochód", "sub": "To wpływa na Twoje stałe wydatki i na to, co może Cię zaskoczyć.",
+    "questions": [
+      { "field": "housing", "type": "single", "label": "Gdzie mieszkasz?", "required": true, "options": [
+        { "value": "rent", "label": "Wynajmuję", "hint": "Najem 2 600 zł/mies.", "icon": "🏢" },
+        { "value": "mortgage", "label": "Własne z kredytem", "hint": "Rata hipoteki 2 300 zł/mies.", "icon": "🏡" },
+        { "value": "own", "label": "Własne bez kredytu", "hint": "Tylko opłaty", "icon": "🏠" },
+        { "value": "family", "label": "Z rodziną", "hint": "Dokładam się do domu", "icon": "👨‍👩‍👧" } ] },
+      { "field": "car", "type": "single", "label": "Masz samochód?", "required": true, "options": [
+        { "value": "none", "label": "Nie mam", "hint": "Komunikacja miejska", "icon": "🚌" },
+        { "value": "private", "label": "Mam prywatny", "hint": "Paliwo, serwis, OC", "icon": "🚗" },
+        { "value": "firm", "label": "Firmowy w leasingu", "hint": "Koszt firmy", "icon": "🚐" } ] }
+    ] },
+  { "id": "insurance", "title": "Jakie masz ubezpieczenia?",
+    "sub": "Zaznacz wszystkie, które masz. Nie wiesz? Zaznacz „Żadnych” – w grze się dowiesz, które są ważne.",
+    "questions": [ { "field": "insurances", "type": "multi", "required": true, "noneValue": "none", "options": [
+      { "value": "ac", "label": "AC auta", "hint": "Twoje auto po stłuczce", "icon": "🚗", "showIf": { "car": "private" } },
+      { "value": "home", "label": "Mieszkanie", "hint": "Zalanie, pożar, kradzież", "icon": "🏠" },
+      { "value": "life", "label": "NNW / na życie", "hint": "Wypadek, choroba", "icon": "❤️" },
+      { "value": "firm_oc", "label": "OC firmy", "hint": "Roszczenia klientów", "icon": "⚖️" },
+      { "value": "firm_prop", "label": "Mienie firmy", "hint": "Sprzęt, towar, lokal", "icon": "🧰" },
+      { "value": "none", "label": "Żadnych / nie wiem", "icon": "🤷" } ] } ] },
+  { "id": "debts", "title": "Kredyty i długi",
+    "sub": "Bez oceniania – to najważniejsza część punktu startowego. W grze każdy dług ma standardową kwotę.",
+    "questions": [ { "field": "debts", "type": "multi", "source": "debts", "required": true, "noneValue": "none", "extraOptions": [
+      { "value": "rachunki", "label": "Zaległe rachunki", "hint": "Prąd, telefon – 700 zł", "icon": "🧾" },
+      { "value": "none", "label": "Nie mam długów", "icon": "🙌" } ] } ] },
+  { "id": "habits", "title": "Twoje nawyki", "sub": "Ostatnie dwa pytania.",
+    "questions": [
+      { "field": "cushion", "type": "single", "label": "Ile masz odłożone na czarną godzinę?", "required": true, "options": [
+        { "value": "none", "label": "Nic", "icon": "🫙" },
+        { "value": "lt1", "label": "Mniej niż miesiąc wydatków", "icon": "🪙" },
+        { "value": "m1_3", "label": "1–3 miesiące", "icon": "💰" },
+        { "value": "m3", "label": "Ponad 3 miesiące", "icon": "🏦" } ] },
+      { "field": "separated", "type": "single", "label": "Masz osobne konto firmowe i prywatne?", "required": true, "options": [
+        { "value": "yes", "label": "Tak, rozdzielam", "icon": "🗂️" },
+        { "value": "no", "label": "Nie, wszystko na jednym", "icon": "🔀" } ] }
+    ] },
+  { "id": "summary", "title": "Twój punkt startowy",
+    "sub": "Tak wygląda Twoja sytuacja na początku gry. Na górze panelu gry zawsze zobaczysz aktualne liczby.",
+    "questions": [] }
+]

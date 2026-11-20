@@ -1,0 +1,59 @@
+{
+  "_comment": "Wszystkie kwoty w zł / miesiąc. Każdy gracz dostaje te same liczby – branża zmienia tylko nazwy i scenki. Kamil: tu zmieniasz ekonomię gry bez kodu.",
+  "currency": "zł",
+  "firm": {
+    "startCash": 5000,
+    "baseRevenue": 40000,
+    "variableCostRate": 0.35,
+    "rent": 5000,
+    "otherCosts": 1500,
+    "staffCost": 6000,
+    "ownerSocialSecurity": 1800,
+    "taxRate": 0.12,
+    "startStaff": 1,
+    "maxStaff": 3,
+    "hireCost": 1500,
+    "staffRevenue": 12000,
+    "equipCost": 15000,
+    "equipRevenue": 5000,
+    "leaseRate": 1400,
+    "leaseMonths": 12,
+    "marketingCost": 2500,
+    "marketingRevenue": 6000,
+    "mixedAccountsPenalty": 300,
+    "firmCarCost": 2100
+  },
+  "personal": {
+    "startCash": 1200,
+    "salary": 7000,
+    "salaryMin": 3000,
+    "salaryMax": 15000,
+    "sellStuffAmount": 1200,
+    "lifestyle": { "saver": 2400, "normal": 3400, "comfy": 4800 },
+    "housing": { "rent": 2600, "mortgage": 700, "own": 700, "family": 900 },
+    "carPrivateCost": 700,
+    "publicTransportCost": 150,
+    "cushionStart": { "none": 0, "lt1": 1500, "m1_3": 6000, "m3": 14000 }
+  },
+  "mortgage": { "balance": 320000, "monthlyRate": 0.006, "payment": 2300 },
+  "startOverdue": [
+    { "name": "Zaległa składka ZUS", "owner": "firm", "amount": 1800 },
+    { "name": "Faktura dostawcy po terminie", "owner": "firm", "amount": 3200 }
+  ],
+  "unpaidBillsOverdue": { "name": "Zaległe rachunki (prąd, telefon)", "owner": "me", "amount": 700 },
+  "overduePenaltyRate": 0.1,
+  "savingsMonthlyRate": 0.003,
+  "bondsMonthlyRate": 0.0045,
+  "etfMonthlyMin": -0.015,
+  "etfMonthlyMax": 0.035,
+  "consolidationMonthlyRate": 0.0075,
+  "consolidationPaymentShare": 0.035,
+  "emergencyLoanMonthlyRate": 0.05,
+  "firmStages": [
+    { "minRevenue": 0, "name": "Start" },
+    { "minRevenue": 45000, "name": "Stabilna" },
+    { "minRevenue": 55000, "name": "Rosnąca" },
+    { "minRevenue": 65000, "name": "Lider w okolicy" }
+  ],
+  "eventAfterActions": 2
+}

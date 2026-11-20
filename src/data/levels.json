@@ -1,0 +1,145 @@
+[
+  {
+    "n": 1,
+    "icon": "🧹",
+    "title": "Porządki w długach",
+    "brief": "Zanim zaczniesz rozwijać firmę, posprzątaj finanse. Spłać zaległości i pozbądź się najdroższych długów – każdy procent odsetek to pieniądze, których nigdy nie zainwestujesz.",
+    "goals": [
+      "noOverdue",
+      "noExpensive",
+      "liquidity",
+      "separated"
+    ],
+    "events": [
+      "carBreakdown",
+      "phone",
+      "refund"
+    ],
+    "eventTiming": "midMonth",
+    "lesson": {
+      "title": "Najpierw długi, potem inwestycje",
+      "art": "🧹",
+      "points": [
+        "**Metoda lawiny:** spłacaj najpierw dług z najwyższym oprocentowaniem. Chwilówka (60%+ rocznie) kosztuje wielokrotnie więcej niż kredyt gotówkowy.",
+        "**Zaległości** to nie tylko odsetki – to kary, windykacja i gorsza historia kredytowa, przez którą bank odmówi Ci kredytu na rozwój.",
+        "Długów na **0%** nie musisz spłacać przed czasem – gotówka lepiej służy jako zapas."
+      ],
+      "takeaway": "Spłacony drogi dług to pewny „zysk” równy jego oprocentowaniu. Żadna inwestycja nie da Ci tego bez ryzyka – dlatego długi są przed inwestowaniem."
+    }
+  },
+  {
+    "n": 2,
+    "icon": "🛟",
+    "title": "Poduszka finansowa",
+    "brief": "Życie lubi zaskakiwać. W tym miesiącu zbuduj mini-poduszkę na czarną godzinę – i przetrwaj niespodziankę bez sięgania po chwilówkę.",
+    "goals": [
+      "cushion2000",
+      "noNewDebt",
+      "noOverdue",
+      "liquidity"
+    ],
+    "events": [
+      "car",
+      "laptop",
+      "late"
+    ],
+    "eventTiming": "midMonth",
+    "lesson": {
+      "title": "Poduszka chroni przed długami",
+      "art": "🛟",
+      "points": [
+        "Docelowo poduszka to **3–6 miesięcy wydatków**. Zaczyna się od mini-poduszki – nawet 2–3 tys. zł zmienia wszystko.",
+        "Trzymaj ją **osobno**, na koncie oszczędnościowym, a nie na koncie, z którego płacisz kartą.",
+        "Bez poduszki każda awaria kończy się chwilówką – a ona zjada Twoje przyszłe pieniądze."
+      ],
+      "takeaway": "Poduszka nie jest po to, żeby zarabiać. Jest po to, żebyś nigdy nie musiał się zadłużać w panice."
+    }
+  },
+  {
+    "n": 3,
+    "icon": "🚀",
+    "title": "Rozwój firmy",
+    "brief": "Czas, żeby firma urosła. Zwiększ prognozowany przychód do co najmniej 45 000 zł – ale nie przejedz płynności. Rozwój kosztuje, zanim zacznie zarabiać.",
+    "goals": [
+      "revenue45",
+      "firmBuffer",
+      "cushion2000",
+      "liquidity"
+    ],
+    "events": [
+      "inherit",
+      "order",
+      "refund"
+    ],
+    "eventTiming": "midMonth",
+    "lesson": {
+      "title": "Rośnij tak szybko, jak pozwala płynność",
+      "art": "🚀",
+      "points": [
+        "Każda inwestycja w firmę musi się **zwrócić**: policz, po ilu miesiącach dodatkowy zysk pokryje jej koszt.",
+        "Pracownik kosztuje od pierwszego dnia, a dodatkowe przychody przychodzą później. **Zaplanuj gotówkę** na ten okres.",
+        "**Leasing** chroni płynność, **gotówka** wychodzi taniej w sumie. Wybieraj świadomie, a nie z rozpędu."
+      ],
+      "takeaway": "Firmy rzadko upadają przez brak zysku – częściej przez brak gotówki w złym momencie."
+    }
+  },
+  {
+    "n": 4,
+    "icon": "🛡️",
+    "title": "Zabezpiecz się",
+    "brief": "Firma rośnie, więc masz więcej do stracenia. Ubezpiecz to, czego strata by Cię zrujnowała. Uwaga: pod koniec miesiąca coś się wydarzy…",
+    "goals": [
+      "insured",
+      "cushion2000",
+      "noOverdue",
+      "liquidity"
+    ],
+    "events": [
+      "flood",
+      "equipFail",
+      "claim",
+      "injury",
+      "car"
+    ],
+    "eventTiming": "atClose",
+    "lesson": {
+      "title": "Ubezpieczenie = przeniesione ryzyko",
+      "art": "🛡️",
+      "points": [
+        "Ubezpieczaj to, czego **strata by Cię zrujnowała** – nie drobiazgi, które pokryje poduszka.",
+        "**OC działalności** i **mienie firmy** chronią przed jedną złą sytuacją, która mogłaby zamknąć firmę.",
+        "Kilkaset złotych miesięcznie kontra kilkadziesiąt tysięcy jednorazowo – to prosta matematyka."
+      ],
+      "takeaway": "Poduszka jest na małe niespodzianki, ubezpieczenie na duże katastrofy. Potrzebujesz obu."
+    }
+  },
+  {
+    "n": 5,
+    "icon": "📈",
+    "title": "Pierwsza inwestycja",
+    "brief": "Masz porządek w długach, poduszkę, rosnącą firmę i ubezpieczenia. Teraz możesz zacząć inwestować nadwyżki – mądrze i bez ruszania poduszki.",
+    "goals": [
+      "invested3000",
+      "cushion4000",
+      "noPanic",
+      "noExpensive",
+      "liquidity"
+    ],
+    "events": [
+      "market",
+      "order"
+    ],
+    "eventTiming": "atClose",
+    "lesson": {
+      "title": "Czas pracuje dla Ciebie",
+      "art": "📈",
+      "points": [
+        "Inwestuj dopiero, gdy **nie masz drogich długów**, masz poduszkę, a firma ma zapas.",
+        "**Procent składany:** 500 zł miesięcznie przy średnio 7% rocznie to ok. 260 000 zł po 20 latach.",
+        "**Spadki są normalne.** Sprzedaż w panice zamienia chwilową stratę w prawdziwą.",
+        "**Dywersyfikuj:** obligacje dają stabilność, szeroki fundusz indeksowy daje wzrost w długim terminie."
+      ],
+      "takeaway": "Najważniejsze w inwestowaniu nie jest wybranie idealnego produktu, tylko regularność i cierpliwość."
+    }
+  }
+]
