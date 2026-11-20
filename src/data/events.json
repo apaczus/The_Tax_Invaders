@@ -1,0 +1,184 @@
+{
+  "events": [
+    {
+      "id": "gastro-catering",
+      "industry": "gastronomy",
+      "title": "Big catering order",
+      "description": "A company wants catering for 200 people next month. You must buy ingredients and hire extra staff now — they pay 60 days after the event.",
+      "yes": {
+        "label": "Take the order",
+        "effect": { "cash": -12000, "monthlyRevenue": 4000 },
+        "explanation": "Profitable, but you pay costs today and get money in two months. Without a reserve this can drain your cash."
+      },
+      "no": {
+        "label": "Decline",
+        "effect": {},
+        "explanation": "You keep your cash safe, but miss a profitable client who might have come back."
+      },
+      "relatedBuilding": "liquidity",
+      "concept": "Payment terms and cash flow gap"
+    },
+    {
+      "id": "gastro-fridge",
+      "industry": "gastronomy",
+      "title": "Fridge breaks down",
+      "description": "Your main fridge died on a Friday. A repair costs 6,000 now; a new energy-efficient one costs 15,000 but cuts electricity bills.",
+      "yes": {
+        "label": "Buy a new one",
+        "effect": { "cash": -15000, "monthlyFixedCosts": -600 },
+        "explanation": "Higher cost today, lower costs every month after. It pays back in about 2 years."
+      },
+      "no": {
+        "label": "Just repair it",
+        "effect": { "cash": -6000 },
+        "explanation": "Cheaper now, but the old fridge keeps using more energy and may break again."
+      },
+      "relatedBuilding": "growth",
+      "concept": "Payback period"
+    },
+    {
+      "id": "gastro-winter",
+      "industry": "gastronomy",
+      "title": "Quiet winter season",
+      "description": "Foot traffic drops for the next months. A marketing agency offers a winter campaign for 5,000.",
+      "yes": {
+        "label": "Run the campaign",
+        "effect": { "cash": -5000, "monthlyRevenue": 2500 },
+        "explanation": "Marketing can soften a seasonal dip, but results are never guaranteed."
+      },
+      "no": {
+        "label": "Wait it out",
+        "effect": { "monthlyRevenue": -3000 },
+        "explanation": "You save cash, but revenue falls. This is exactly when a reserve helps."
+      },
+      "relatedBuilding": "liquidity",
+      "concept": "Seasonality"
+    },
+    {
+      "id": "ecom-stock",
+      "industry": "ecommerce",
+      "title": "Bulk stock discount",
+      "description": "Your supplier offers 25% off if you buy 6 months of stock upfront for 30,000.",
+      "yes": {
+        "label": "Buy in bulk",
+        "effect": { "cash": -30000, "monthlyFixedCosts": -2500 },
+        "explanation": "Lower unit costs later, but a big chunk of cash is now frozen in your warehouse."
+      },
+      "no": {
+        "label": "Keep buying monthly",
+        "effect": {},
+        "explanation": "You pay more per item, but your cash stays flexible for surprises."
+      },
+      "relatedBuilding": "liquidity",
+      "concept": "Cash tied up in inventory"
+    },
+    {
+      "id": "ecom-ads",
+      "industry": "ecommerce",
+      "title": "Ad platform price hike",
+      "description": "Your main ad channel raised prices by 40%. You can keep spending or move budget to email and SEO, which takes months to work.",
+      "yes": {
+        "label": "Keep paying for ads",
+        "effect": { "monthlyFixedCosts": 3000 },
+        "explanation": "Sales stay stable, but your margin shrinks every month."
+      },
+      "no": {
+        "label": "Switch to SEO & email",
+        "effect": { "cash": -4000, "monthlyRevenue": -2000 },
+        "explanation": "A short-term dip for a cheaper, more independent sales channel later."
+      },
+      "relatedBuilding": "growth",
+      "concept": "Customer acquisition cost"
+    },
+    {
+      "id": "ecom-return",
+      "industry": "ecommerce",
+      "title": "Wave of returns",
+      "description": "A faulty batch from your supplier leads to many returns. You can refund everyone immediately or argue case by case.",
+      "yes": {
+        "label": "Refund everyone now",
+        "effect": { "cash": -8000 },
+        "explanation": "It hurts today, but protects your reviews — your most valuable long-term asset."
+      },
+      "no": {
+        "label": "Handle case by case",
+        "effect": { "cash": -3000, "monthlyRevenue": -2500 },
+        "explanation": "You save money now, but bad reviews quietly lower sales for months."
+      },
+      "relatedBuilding": "liquidity",
+      "concept": "Short-term cost vs. long-term value"
+    },
+    {
+      "id": "it-big-client",
+      "industry": "it_services",
+      "title": "One giant client",
+      "description": "A corporation offers a contract worth 60% of your revenue. They want you to drop smaller clients to focus on them.",
+      "yes": {
+        "label": "Sign the contract",
+        "effect": { "monthlyRevenue": 9000 },
+        "explanation": "More revenue, but if this one client leaves, you lose most of your income at once."
+      },
+      "no": {
+        "label": "Stay diversified",
+        "effect": {},
+        "explanation": "Slower growth, but no single client can sink your company."
+      },
+      "relatedBuilding": "investing",
+      "concept": "Concentration risk (diversification)"
+    },
+    {
+      "id": "it-late-invoice",
+      "industry": "it_services",
+      "title": "Invoice 60 days late",
+      "description": "Your biggest client delays a 20,000 payment by two months. A factoring company offers the cash now for a 3% fee.",
+      "yes": {
+        "label": "Use factoring",
+        "effect": { "cash": -600 },
+        "explanation": "You pay a small fee to keep cash flowing. Worth it only when you have no reserve."
+      },
+      "no": {
+        "label": "Wait for payment",
+        "effect": { "cash": -20000 },
+        "explanation": "Free, but the missing 20,000 has to come from your cash or reserve meanwhile."
+      },
+      "relatedBuilding": "liquidity",
+      "concept": "Receivables and liquidity"
+    },
+    {
+      "id": "it-hire",
+      "industry": "it_services",
+      "title": "Hire a senior developer",
+      "description": "A great senior developer is available. They cost 15,000 per month, but would let you take on bigger projects.",
+      "yes": {
+        "label": "Hire",
+        "effect": { "monthlyFixedCosts": 15000, "monthlyRevenue": 20000 },
+        "explanation": "Fixed costs rise immediately, while extra revenue depends on winning new projects."
+      },
+      "no": {
+        "label": "Not now",
+        "effect": {},
+        "explanation": "Lower risk, but you may turn down larger projects."
+      },
+      "relatedBuilding": "growth",
+      "concept": "Fixed costs and operating leverage"
+    },
+    {
+      "id": "all-market-drop",
+      "industry": "all",
+      "title": "Market drops 15%",
+      "description": "Stock markets fell 15% this month. Headlines are scary. Do you sell your ETF to stop the loss?",
+      "yes": {
+        "label": "Sell everything",
+        "effect": { "portfolioChangePct": -0.15 },
+        "explanation": "Selling locks in the loss. Historically, broad markets recovered — but only for those who stayed invested."
+      },
+      "no": {
+        "label": "Hold",
+        "effect": { "portfolioChangePct": -0.15 },
+        "explanation": "Your portfolio is down on paper. With a long horizon, holding gives it time to recover."
+      },
+      "relatedBuilding": "investing",
+      "concept": "Volatility and staying invested"
+    }
+  ]
+}

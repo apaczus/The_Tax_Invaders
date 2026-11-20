@@ -1,0 +1,74 @@
+{
+  "lessons": [
+    {
+      "id": "liquidity-1",
+      "buildingId": "liquidity",
+      "unlocksLevel": 1,
+      "title": "Why a cash reserve?",
+      "content": "Profit on paper does not pay the bills — cash does. A reserve of 3–6 months of fixed costs lets your business survive late payments or a slow season without panic decisions.",
+      "question": {
+        "prompt": "Your fixed costs are 30,000 per month. What is a healthy minimum reserve?",
+        "options": ["10,000", "90,000", "300,000"],
+        "correctIndex": 1,
+        "explanation": "3 months × 30,000 = 90,000. That covers a typical late payment or slow quarter."
+      },
+      "concept": "Emergency reserve (liquidity cushion)"
+    },
+    {
+      "id": "investing-1",
+      "buildingId": "investing",
+      "unlocksLevel": 1,
+      "title": "Risk vs. time horizon",
+      "content": "Investments that can grow more, like ETFs, also swing more in the short term. The longer you can leave money untouched, the more short-term drops you can wait out.",
+      "question": {
+        "prompt": "You will need this money in 6 months. Which option fits best?",
+        "options": ["100% stock ETF", "Term deposit or short bonds", "Keep it all as cash forever"],
+        "correctIndex": 1,
+        "explanation": "With a short horizon, a market drop may not recover in time. Low-risk options protect money you need soon."
+      },
+      "concept": "Risk vs. investment horizon"
+    },
+    {
+      "id": "investing-2",
+      "buildingId": "investing",
+      "unlocksLevel": 2,
+      "title": "Don't put all eggs in one basket",
+      "content": "Diversification means spreading money across different assets. When one falls, others may hold or rise, so the whole portfolio swings less.",
+      "question": {
+        "prompt": "Which portfolio is more diversified?",
+        "options": ["100% in one company's shares", "A mix of deposit, bonds and a broad ETF"],
+        "correctIndex": 1,
+        "explanation": "A broad ETF alone holds hundreds of companies, and mixing it with bonds and deposits reduces risk further."
+      },
+      "concept": "Diversification"
+    },
+    {
+      "id": "taxes-1",
+      "buildingId": "taxes",
+      "unlocksLevel": 1,
+      "title": "Costs that lower your tax",
+      "content": "Business tax is usually paid on profit, not revenue. Legitimate business costs reduce profit, so planning purchases with taxes in mind keeps more cash in the company.",
+      "question": {
+        "prompt": "Tax is calculated on…",
+        "options": ["Revenue", "Profit (revenue minus costs)", "Cash in the bank"],
+        "correctIndex": 1,
+        "explanation": "Profit = revenue − deductible costs. That is the base for income tax."
+      },
+      "concept": "Tax base: revenue vs. profit"
+    },
+    {
+      "id": "growth-1",
+      "buildingId": "growth",
+      "unlocksLevel": 1,
+      "title": "Reinvesting in your business",
+      "content": "Sometimes the best investment is your own company: a new machine or better marketing can raise revenue for years. Compare the expected extra profit with what the money would earn elsewhere.",
+      "question": {
+        "prompt": "A 20,000 machine adds 1,000 profit per month. How long until it pays for itself?",
+        "options": ["2 months", "20 months", "200 months"],
+        "correctIndex": 1,
+        "explanation": "20,000 ÷ 1,000 = 20 months. That is the payback period."
+      },
+      "concept": "Payback period / return on reinvestment"
+    }
+  ]
+}
