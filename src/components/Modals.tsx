@@ -105,6 +105,7 @@ export function EventModal({ game }: { game: GameState }) {
             ) : (
               <Button title="Super, dalej" onPress={() => pick({ kind: "cost", source: "me" })} />
             )}
+            {e.lesson ? <Text className="text-ink-soft text-sm mt-3">📘 {e.lesson}</Text> : null}
           </View>
         ) : null}
 

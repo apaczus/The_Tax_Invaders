@@ -13,7 +13,9 @@
     "events": [
       "carBreakdown",
       "phone",
-      "refund"
+      "refund",
+      "vet",
+      "overLimit"
     ],
     "eventTiming": "midMonth",
     "lesson": {
@@ -41,7 +43,9 @@
     "events": [
       "car",
       "laptop",
-      "late"
+      "late",
+      "dentist",
+      "supplierUp"
     ],
     "eventTiming": "midMonth",
     "lesson": {
@@ -69,7 +73,10 @@
     "events": [
       "inherit",
       "order",
-      "refund"
+      "refund",
+      "competitor",
+      "viral",
+      "late"
     ],
     "eventTiming": "midMonth",
     "lesson": {
@@ -99,7 +106,8 @@
       "equipFail",
       "claim",
       "injury",
-      "car"
+      "car",
+      "burglary"
     ],
     "eventTiming": "atClose",
     "lesson": {
@@ -127,7 +135,9 @@
     ],
     "events": [
       "market",
-      "order"
+      "order",
+      "bonus",
+      "inflation"
     ],
     "eventTiming": "atClose",
     "lesson": {

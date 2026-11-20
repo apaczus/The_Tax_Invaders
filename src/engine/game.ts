@@ -161,7 +161,14 @@ export function pickEvent(s: GameState): string | null {
 
 export function eventText(s: GameState, id: string): string {
   const I = industryOf(s.profile.industry);
-  return fill(EVENTS[id].text, { equipFail: I.equipFail, claim: I.claim, order: I.order });
+  return fill(EVENTS[id].text, {
+    equipFail: I.equipFail,
+    claim: I.claim,
+    order: I.order,
+    competitor: I.competitor,
+    viral: I.viral,
+    variableCosts: I.variableCosts,
+  });
 }
 
 /** Odpala zdarzenie (mutuje). Zwraca true, jeśli coś się wydarzyło. */
@@ -285,21 +292,21 @@ export function resolveEvent(state: GameState, choice: EventChoice): EngineResul
       }
       s.debts = s.debts.filter((d) => d.balance > 0.5);
       s.me.savings += left;
-      log(s, "Spadek: spłata najdroższych długów" + (left ? ", reszta do poduszki" : ""), amt, "me");
+      log(s, `${e.title}: spłata najdroższych długów` + (left ? ", reszta do poduszki" : ""), amt, "me");
       messages.push("Świetnie – spłacony dług to pewny zysk." + (left ? ` Reszta (${fmt(left)}) trafiła do poduszki.` : ""));
       badge(s, "Mądrze wykorzystany spadek");
     } else if (choice.choice === "savings") {
       s.me.savings += amt;
-      log(s, "Spadek → poduszka", amt, "me");
+      log(s, `${e.title} → poduszka`, amt, "me");
       messages.push("Poduszka urosła. Bezpiecznie i rozsądnie.");
       badge(s, "Mądrze wykorzystany spadek");
     } else if (choice.choice === "firm") {
       s.firm.reserve += amt;
-      log(s, "Spadek → rezerwa firmy", amt, "firm");
+      log(s, `${e.title} → rezerwa firmy`, amt, "firm");
       messages.push("Firma ma zapas na gorsze miesiące i na rozwój.");
       badge(s, "Mądrze wykorzystany spadek");
     } else {
-      log(s, "Spadek wydany na wakacje i nowy telefon", 0, "me");
+      log(s, `${e.title}: wszystko wydane na wakacje i nowy telefon`, 0, "me");
       messages.push(`Było miło… ale ${fmt(amt)} zniknęło bez śladu. Spłacony dług albo poduszka pracowałyby dla Ciebie latami.`);
     }
     ev.outcome = choice.choice;
