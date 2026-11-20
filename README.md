@@ -2,12 +2,10 @@
 
 ## ▶️ Zagraj w przeglądarce / Play in your browser
 
-### **https://apaczus.github.io/The_Tax_Invaders/**
+### **[https://finance-quest.expo.app](https://finance-quest.expo.app)**
 
 Nic nie trzeba instalować – link działa na komputerze i na telefonie.
 No installation needed – works on desktop and mobile browsers.
-
-Zapasowy link / Backup link: https://finance-quest.expo.app
 
 **Collabothon 2026 · Commerzbank challenge „Finance Quest”**
 
@@ -59,7 +57,10 @@ Stack: Expo SDK 58 (React Native 0.88), TypeScript, Expo Router, NativeWind 4, Z
 
 Po zmianie uruchom `npm test`, żeby sprawdzić, czy level 1 nadal da się przejść.
 
-## Publikacja (GitHub Pages)
-Workflow `.github/workflows/web.yml` po każdym merge'u do `main` uruchamia testy, buduje wersję web
-i publikuje ją pod https://apaczus.github.io/The_Tax_Invaders/ – link aktualizuje się sam.
-Jednorazowo (właściciel repo): repo publiczne + *Settings → Pages → Source: GitHub Actions*.
+## Publikacja
+
+- **Expo Hosting** (link na górze README): `npx expo export --platform web` + `npx eas-cli deploy --prod`
+  z konta Expo właściciela projektu. Link nie aktualizuje się sam – po zmianach trzeba opublikować ponownie.
+- **GitHub Pages** (opcjonalnie): workflow `.github/workflows/web.yml` po każdym merge'u do `main` buduje
+  wersję web i publikuje ją pod https://apaczus.github.io/The_Tax_Invaders/. Wymaga jednorazowo
+  (właściciel repo): *Settings → Pages → Source: GitHub Actions*.
